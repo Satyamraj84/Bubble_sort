@@ -1,25 +1,5 @@
 #include<iostream>
 using namespace std;
-
-int main(int argc, char const *argv[])
-{
-    int A[30], Size;
-    cout << "Enter the Size of Array: " << endl;
-    cin >> Size;
-    cout << "Enter the Elements : " << endl;
-    for (int i = 0; i < Size; i++)
-    {
-        cin >> A[i];
-    }
-
-    cout << "Before Bubble Sort : " << endl;
-    Print_Array(A, Size);
-    Bubble_Sort(A, Size);
-    cout << endl
-         << "After Bubble Sorting : " << endl;
-    Print_Array(A, Size);
-    return 0;
-}
  void Bubble_Sort(int Arr[], int Size)
 {
     int Counter = 1, temp;
@@ -43,4 +23,24 @@ int main(int argc, char const *argv[])
     {
         cout << Arr[i] << "\t";
     }
+}
+
+int main(int argc, char const *argv[])
+{
+    int A[30], Size;
+    cout << "Enter the Size of Array: " << endl;
+    cin >> Size;
+    cout << "Enter the Elements : " << endl;
+    for (int i = 0; i < Size; i++)
+    {
+        cin >> A[i];
+    }
+
+    cout << "Before Bubble Sort : " << endl;
+    Print_Array(A, Size);
+    Bubble_Sort(A, Size);
+    cout << endl
+         << "After Bubble Sorting : " << endl;
+    Print_Array(A, Size);
+    return 0;
 }
