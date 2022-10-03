@@ -20,7 +20,7 @@ int main(int argc, char const *argv[])
     Print_Array(A, Size);
     return 0;
 }
-[9:46 pm, 03/10/2022] Satyam Vickey: void Bubble_Sort(int Arr[], int Size)
+ void Bubble_Sort(int Arr[], int Size)
 {
     int Counter = 1, temp;
     while (Counter < Size)
